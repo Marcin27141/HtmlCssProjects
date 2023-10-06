@@ -1,5 +1,9 @@
 <style>
 
+h1, h2, h3, h4, h5, h6, p {
+  font-family:serif;
+}
+
 a {
   text-decoration: none;
   text-transform: uppercase;
@@ -9,12 +13,17 @@ a:hover {
   text-decoration: underline;
 }
 
-p {
-  text-align: center;
-}
-
 div {
   text-align: center;
+  width: auto;
+  margin:auto;
+}
+
+.bird-description {
+  font-size: 20px;
+  width: 50%;
+  text-align: center;
+  margin:auto;
 }
 
 .bird-of-the-day-buttons {
@@ -100,7 +109,12 @@ div {
     </div>
   </div>
   <div>
-    <h2>Bird of the day: Northern Cardinal</h2>
+    <div class="bird-description">
+      <h2>Bird of the day: Northern Cardinal</h2>
+      <p>
+        The northern cardinal (Cardinalis cardinalis), known colloquially as the redbird, common cardinal, red cardinal, or just cardinal, is a bird in the genus Cardinalis. It can be found in southeastern Canada, through the eastern United States from Maine to Minnesota to Texas, New Mexico, southern Arizona, southern California, and south through Mexico, Belize, and Guatemala.
+      </p>
+    </div>
     <div>
       <a target="_blank" href="https://en.wikipedia.org/wiki/Northern_cardinal">
         <img alt="Northern cardinal" width="600" height="400"
@@ -120,6 +134,6 @@ div {
         </button>
       </div>
     </div>
-  </div>   
+  </div>
 </body>
 </html>
