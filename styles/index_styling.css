@@ -1,6 +1,12 @@
 h1, h2, h3, h4, h5, h6, p {
     font-family:serif;
   }
+
+  body {
+    background-image: url(https://img.freepik.com/free-photo/green-park-view_1417-1492.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   
   a {
     text-decoration: none;
@@ -29,13 +35,22 @@ h1, h2, h3, h4, h5, h6, p {
   }
   
   .welcome-container {
-    margin-bottom: 75px;
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+  }
+
+  .welcome-message {
+    /* float: left; */
+    display: block; /* Change display to block */
   }
   
   .authentication-button {
-      background-color: rgb(148, 207, 247);
-      color: rgb(0, 153, 255);
-      border-color: rgb(0, 153, 255);
+      background-color: rgb(184, 73, 22);
+      color: white;
+      border: none;
       height: 50px;
       width: 100px;
       border-radius: 4px;
@@ -44,6 +59,8 @@ h1, h2, h3, h4, h5, h6, p {
       font-size: 15px;
       margin-right: 15px;
       transition: background-color 0.5s;
+      float: right;
+      margin: 0;
     }
   
     .authentication-button:hover {
