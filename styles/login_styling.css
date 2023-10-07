@@ -1,17 +1,15 @@
-div {
-    max-width: 400px;
-    margin: auto;
-    font-size: 20px;
-  }
-
   form {
     width: 100%;
+    margin-top: 200px;
+    margin-bottom: 300px;
   }
 
   
   .login-container {
     margin-top: 200px;
-    margin-bottom: 100px;
+    max-width: 400px;
+    font-size: 20px;
+    margin: auto;
   }
 
   input {
@@ -35,14 +33,14 @@ div {
   }
 
   input[type=text] {
-    background: url(https://static.vecteezy.com/system/resources/thumbnails/000/551/599/small/user_icon_011.jpg) no-repeat scroll 30px 30px;
+    background: url(https://cdn-icons-png.flaticon.com/256/2815/2815428.png) no-repeat scroll 30px 30px;
     background-size: 30px;
     background-position: 10px 3px;
     padding-left: 50px;
   }
 
   input[type=password] {
-    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSXS9LD5xezS1JurYlt-PeuIe2ct0K4xORONKUtxqJIYqBY0qmCaaZI4pEVwV5ElRLGKM&usqp=CAU) no-repeat scroll 30px 30px;
+    background: url(https://icon-library.com/images/security-lock-icon/security-lock-icon-9.jpg) no-repeat scroll 30px 30px;
     background-size: 30px;
     background-position: 10px 3px;
     padding-left: 50px;

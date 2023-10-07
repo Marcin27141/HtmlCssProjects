@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/general_styling.css">
     <link rel="stylesheet" href="styles/login_styling.css">
 </head>
 <body>
+  <div class="navbar">
+    <a class="left" href="website1.html">Home</a>
+    <a class="right" href="login.html">Login</a>
+    <a class="right" href="login.html">Register</a>
+  </div>
   <div class="login-container">
     <form>
       <label for="username">Username:</label><br>
       <input type="text" id="username" name="username"><br>
       <label for="password">Password:</label><br>
       <input type="password" id="password" name="password">
+      <input type="button" value="Log in">
     </form>
-    <input type="button" value="Log in">
   </div>
   <p class="register-incentive">
-    You don't have an account? <span class="register-span">Register here</span>
+    You don't have an account? <a href="login.html" register-span">Register here</a>
   </p>
 </body>
 </html>
