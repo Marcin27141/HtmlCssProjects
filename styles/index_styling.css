@@ -20,6 +20,13 @@
     text-align: center;
     margin:auto;
   }
+
+  .href_div {
+    background-color: burlywood;
+    width: 450px;
+    border: solid brown;
+    border-width: 3px;
+  }
   
   .bird-of-the-day-buttons {
     margin-top: 20px;
