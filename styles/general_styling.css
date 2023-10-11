@@ -8,6 +8,15 @@ body {
     font-family:serif;
 }
 
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .navbar {
     overflow: hidden;
     background-color: #f3f3f3;

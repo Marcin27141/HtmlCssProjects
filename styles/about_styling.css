@@ -17,3 +17,42 @@ div {
     font-size: 20px;
     max-width: 60%;
 }
+
+hr.rounded {
+    border-top: 8px solid #be6565;
+    border-radius: 5px;
+  }
+
+.under-line-div {
+    display: flex;
+}
+
+.difinitions-div, .lists-div {
+    width: 50%;
+    padding: 10px;
+}
+
+.lists-div, .definitions-div {
+    font-size: 20px;
+    max-width: 400px;
+}
+
+ul, ol, dl {
+    font-size: 20px;
+    text-align: left;
+    list-style-position: inside;
+}
+
+dt {
+    font-weight: bold;
+}
+
+.search-birds-anchor {
+    font-size: 40px;
+}
+
+.search-div {
+    background-color: rgb(190, 101, 101, 0.5);
+    padding: 10px;
+    margin-top: 100px;
+}
