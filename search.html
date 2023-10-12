@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="styles/general_styling.css">
+    <link rel="stylesheet" href="styles/search_styling.css">
+</head>
+<body>
+    <div class="navbar">
+        <a class="left" href="website1.html">Home</a>
+        <a class="left" href="about.html">About</a>
+        <a class="right" href="login.html">Login</a>
+        <a class="right" href="login.html">Register</a>
+    </div>
+    <div class="explanation-div">
+        <h1>Look for a bird!</h1>
+    </div>
+    <div class="search-container">
+        <form>
+          <label>Name:</label><br>
+          <input type="text"><br>
+
+          <label>Can fly:</label><br>
+          <input type="checkbox"><br>
+
+          <label>Dominant color:</label><br>
+          <input type="color"><br>
+
+          <label>Weight (+/- 5kg):</label><br>
+          <input type="number">
+
+          <label>Winspan (+/- 20cm):</label><br>
+          <input type="range">
+
+          <label>Risk of extinction:</label><br>
+          <div class="radio-group">
+            <input type="radio" name="extinction" id="leastConcern">
+            <label for="leastConcern">Least Concern</label>
+          
+            <input type="radio" name="extinction" id="leastVulnerable">
+            <label for="leastVulnerable">Least Vulnerable</label>
+          
+            <input type="radio" name="extinction" id="endangered">
+            <label for="endangered">Endangered</label>
+          
+            <input type="radio" name="extinction" id="criticallyEndangered">
+            <label for="criticallyEndangered">Critically endangered</label>
+          </div>
+
+          <input type="reset" value="Reset">
+          <input type="button" value="Search">
+        </form>
+      </div>
+      <div class="search-container">
+        <h2>
+            Couldn't find the bird you were looking for? Let us know!
+        </h2>
+        <form>
+            <label>Your email:</label><br>
+            <input type="email"><br>
+
+            <label>Your mobile phone:</label><br>
+            <input type="tel"><br>
+  
+            <label>Bird photo</label><br>
+            <input type="file"><br>
+  
+            <label>Url for species documentation:</label><br>
+            <input type="url"><br>
+  
+            <input type="reset" value="Reset">
+          <input type="button" value="Send">
+          </form>
+      </div>
+</body>
+</html>
