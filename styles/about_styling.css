@@ -1,3 +1,7 @@
+a {
+    font-size: 40px;
+}
+
 .welcome-message {
     text-align: center;
     margin-bottom: 20px;
@@ -39,10 +43,6 @@ ul, ol, dl {
 
 dt {
     font-weight: bold;
-}
-
-.search-birds-anchor {
-    font-size: 40px;
 }
 
 .search-div {

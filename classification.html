@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search</title>
+    <title>Classification</title>
     <link rel="stylesheet" href="styles/general_styling.css">
-    <link rel="stylesheet" href="styles/search_styling.css">
+    <link rel="stylesheet" href="styles/classification_styling.css">
 </head>
 <body>
     <div class="navbar">
@@ -15,8 +15,8 @@
         <a class="right" href="login.html">Register</a>
     </div>
     <div class="explanation-div">
-        <h1>Look for a bird!</h1>
-        <h3>Here is an example of a bird classification (useful for the search):</h2>
+        <h1>Birds classification</h1>
+        <h3>Here is an example of a bird classification:</h2>
     </div>
     <div class="left-right-div example-div">
         <div class="names-difinition-div">
@@ -78,6 +78,39 @@
             </ul>
         </div>
     </div>
-    
+    <table class="classification-table">
+        <thead>
+          <tr>
+            <th>Order</th>
+            <th>Family</th>
+            <th>Genus</th>
+            <th>Species</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="4">Passeriformes</td>
+            <td rowspan="4">Cardinalidae</td>
+            <td rowspan="2">Cardinalis</td>
+            <td>Cardinalis cardinalis</td>
+          </tr>
+          <tr>
+            <td>Vermilion cardinal</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Piranga</td>
+            <td>Piranga rubriceps</td>
+          </tr>
+          <tr>
+            <td>Piranga ludoviciana</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>~140 families</td>
+            <td>14 genera</td>
+          </tr>
+        </tfoot>
+    </table>
 </body>
 </html>
