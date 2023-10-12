@@ -1,0 +1,28 @@
+ul, ol, dl {
+    font-size: 20px;
+    text-align: left;
+    list-style-position: inside;
+}
+
+h1, h3 {
+    margin: 10px;
+}
+
+.explanation-div {
+    font-size: 20px;
+}
+
+.names-difinition-div, .examples-div {
+    width: 50%;
+    padding: 10px;
+    text-align: right;
+}
+
+.names-difinition-div, .examples-div {
+    font-size: 20px;
+    max-width: 400px;
+}
+
+.example-div {
+    max-width: 800px;
+}
