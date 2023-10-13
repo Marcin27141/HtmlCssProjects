@@ -23,7 +23,7 @@
           <input type="text"><br>
 
           <label>Can fly:</label><br>
-          <input type="checkbox"><br>
+          <input type="checkbox" checked="checked"><br>
 
           <label>Dominant color:</label><br>
           <input type="color"><br>
@@ -32,7 +32,7 @@
           <input type="number">
 
           <label>Winspan (+/- 20cm):</label><br>
-          <input type="range">
+          <input type="range" class="sliderClass">
 
           <label>Risk of extinction:</label><br>
           <div class="radio-group">
@@ -49,7 +49,7 @@
             <label for="criticallyEndangered">Critically endangered</label>
           </div>
 
-          <input type="reset" value="Reset">
+          <input type="reset" id="reset-button" value="Reset">
           <input type="button" value="Search">
         </form>
       </div>
@@ -70,8 +70,9 @@
             <label>Url for species documentation:</label><br>
             <input type="url"><br>
   
-            <input type="reset" value="Reset">
-          <input type="button" value="Send">
+            
+            <input type="reset" id="reset-button" value="Reset">
+            <input type="button" value="Send">
           </form>
       </div>
 </body>

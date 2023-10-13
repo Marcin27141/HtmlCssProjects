@@ -1,0 +1,165 @@
+a {
+    font-size: 30px;
+}
+
+.welcome-message {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.quote {
+    margin: 0px auto;
+}
+
+.about-div {
+    font-size: 20px;
+    max-width: 60%;
+}
+
+hr.rounded {
+    border-top: 8px solid #be6565;
+    border-radius: 5px;
+  }
+
+.under-line-div {
+    display: flex;
+}
+
+.difinitions-div, .lists-div {
+    width: 50%;
+    padding: 10px;
+}
+
+.lists-div, .definitions-div {
+    font-size: 20px;
+    max-width: 400px;
+}
+
+ul, ol, dl {
+    font-size: 20px;
+    text-align: left;
+    list-style-position: inside;
+}
+
+dt {
+    font-weight: bold;
+}
+
+.search-div {
+    background-color: rgb(190, 101, 101, 0.5);
+    padding: 10px;
+    margin-top: 0px;
+}
+
+ul, ol, dl {
+    font-size: 20px;
+    text-align: left;
+    list-style-position: inside;
+}
+
+h1, h3 {
+    margin: 10px;
+}
+
+table {
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 3px solid rgb(28, 75, 1);
+    font-size: 20px;
+}
+
+td {
+    padding: 5px 5px;
+    text-align: center;
+}
+
+.classification-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.classification-explanation-div, .search-explanation-div {
+    font-size: 20px;
+    margin-top: 200px;
+}
+
+.names-difinition-div, .examples-div {
+    width: 50%;
+    padding: 10px;
+    text-align: right;
+}
+
+.names-difinition-div, .examples-div {
+    font-size: 20px;
+    max-width: 400px;
+}
+
+.example-div {
+    max-width: 800px;
+}
+
+form {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  
+  .search-container {
+    margin-top: 200px;
+    max-width: 400px;
+    font-size: 20px;
+    margin: auto;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 2px 0px 40px 0px;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=button] {
+    background-color: #1fa574;
+    border: none;
+    color: white;
+    padding-right: 50px;
+    padding-left: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+  }
+
+  input[type=text], input[type=email], input[type=number], input[type=tel], input[type=url] {
+    background-color: transparent;
+  }
+
+  input[type=color] {
+    padding: 0;
+  }
+
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+  .radio-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .radio-group label {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+  }
+
+  #reset-button {
+    margin-top: 20px;
+    margin-bottom: 2px;
+  }
