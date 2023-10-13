@@ -51,6 +51,10 @@ dt {
     margin-top: 0px;
 }
 
+.bottom-element {
+    margin-bottom: 50px;
+}
+
 ul, ol, dl {
     font-size: 20px;
     text-align: left;

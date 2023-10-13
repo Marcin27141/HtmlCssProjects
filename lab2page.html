@@ -6,9 +6,16 @@
     <title>About</title>
     <link rel="stylesheet" href="styles/general_styling.css">
     <link rel="stylesheet" href="styles/lab2page_styling.css">
+
+    <!--non-default meta elements-->
+    <meta name="keywords" content="Birds, Encyclopedia">
+    <meta name="description" content="Online birds encyclopedia">
+    <meta name="author" content="Marcin Tkocz">
+    <meta name="application-name" content="Birds encyclopedia">
+    <meta http-equiv = "refresh" content = "300">
 </head>
 <body>
-    <div class="navbar">
+    <div class="navbar" id="top">
         <a class="left" href="website1.html">Home</a>
         <a class="left" href="about.html">About</a>
         <a class="right" href="login.html">Login</a>
@@ -17,11 +24,15 @@
     <div class="search-div">
         <img alt="Classification icon" width="40" height="40"
         src="https://static.thenounproject.com/png/4577689-200.png">
-        <a href="classification.html">BIRDS CLASSIFICATION</a>
+        <a href="#classification-lists">CLASSIFICATION LISTS</a>
+        <br><br>
+        <img alt="Classification icon" width="40" height="40"
+        src="https://static.thenounproject.com/png/4577689-200.png">
+        <a href="#classification-table">CLASSIFICATION TABLE</a>
         <br><br>
         <img alt="Search icon" width="40" height="40"
         src="https://cdn-icons-png.flaticon.com/512/149/149852.png">
-        <a href="login.html">SEARCH BIRDS</a>
+        <a href="#search">SEARCH BIRDS</a>
     </div>
     <h1 class="welcome-message">&#8226; About the <i>.NetLabBirdEncyclopedia</i>&reg; &#8226;</h1>
     <div class="inspirational-div">
@@ -67,7 +78,7 @@
         <h1>Birds classification</h1>
         <h3>Here is an example of a bird classification:</h2>
     </div>
-    <div class="left-right-div example-div">
+    <div class="left-right-div example-div" id="classification-lists">
         <div class="names-difinition-div">
             <ul>
                 <li>Order
@@ -127,7 +138,7 @@
             </ul>
         </div>
     </div>
-    <table class="classification-table">
+    <table class="classification-table" id="classification-table">
         <thead>
           <tr>
             <th>Class</th>
@@ -167,7 +178,7 @@
     <div class="search-explanation-div">
         <h1>Look for a bird!</h1>
     </div>
-    <div class="search-container">
+    <div class="search-container" id="search">
         <form>
           <label>Name:</label><br>
           <input type="text"><br>
@@ -225,5 +236,8 @@
             <input type="button" value="Send">
           </form>
       </div>
+      <div class="search-div bottom-element">
+        <a href="#top">MOVE TO THE TOP</a>
+    </div>
 </body>
 </html>
