@@ -31,6 +31,8 @@ mark {
 .about-div {
     font-size: 20px;
     max-width: 60%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .rounded-horizontal {
@@ -127,7 +129,6 @@ td {
 form {
     width: 100%;
     margin-top: 50px;
-    margin-bottom: 100px;
   }
 
   
@@ -136,6 +137,7 @@ form {
     max-width: 400px;
     font-size: 20px;
     margin: auto;
+    margin-bottom: 100px;
   }
 
   input {
