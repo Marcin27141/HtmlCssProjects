@@ -11,6 +11,8 @@
     width: 450px;
     border: solid brown;
     border-width: 3px;
+    display: flex;
+    flex-direction: column;
   }
   
   .bird-of-the-day-buttons {

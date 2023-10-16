@@ -22,17 +22,21 @@
         <a class="right" href="login.html">Register</a>
     </div>
     <div class="search-div">
-        <img alt="Classification icon" width="40" height="40"
-        src="https://static.thenounproject.com/png/4577689-200.png">
-        <a href="#classification-lists">CLASSIFICATION LISTS</a>
-        <br><br>
-        <img alt="Classification icon" width="40" height="40"
-        src="https://static.thenounproject.com/png/4577689-200.png">
-        <a href="#classification-table">CLASSIFICATION TABLE</a>
-        <br><br>
-        <img alt="Search icon" width="40" height="40"
-        src="https://cdn-icons-png.flaticon.com/512/149/149852.png">
-        <a href="#search">SEARCH BIRDS</a>
+        <div class="topIdNav">
+            <img alt="Classification icon" width="40" height="40"
+            src="https://static.thenounproject.com/png/4577689-200.png">
+            <a href="#classification-lists">CLASSIFICATION LISTS</a>    
+        </div>
+        <div class="topIdNav">
+            <img alt="Classification icon" width="40" height="40"
+            src="https://static.thenounproject.com/png/4577689-200.png">
+            <a href="#classification-table">CLASSIFICATION TABLE</a>    
+        </div>
+        <div class="topIdNav">
+            <img alt="Search icon" width="40" height="40"
+            src="https://cdn-icons-png.flaticon.com/512/149/149852.png">
+            <a href="#search">SEARCH BIRDS</a>    
+        </div>
     </div>
     <h1 class="welcome-message">&#8226; About the <i>.NetLabBirdEncyclopedia</i>&reg; &#8226;</h1>
     <div class="inspirational-div">
@@ -44,7 +48,7 @@
             <i>.NetLabBirdEncyclopedia</i> is a <b>labor of love</b> created on October 11<sup>th</sup> 2023 <u>to share our passion</u> for the magnificent avian world with enthusiasts and curious minds alike.
         </p>
     </div>
-    <hr class="rounded">
+    <div class="rounded-horizontal"></div>
     <div class="left-right-div">
         <div class="lists-div">
             <p>Our goals <b>are</b>:</p>
@@ -180,22 +184,24 @@
     </div>
     <div class="search-container" id="search">
         <form>
-          <label>Name:</label><br>
-          <input type="text"><br>
+          <label>Name:</label>
+          <input type="text">
 
-          <label>Can fly:</label><br>
-          <input type="checkbox" checked="checked"><br>
+          <div class="can-fly-div">
+            <label>Can fly:</label>
+            <input type="checkbox" checked="checked">
+          </div>
 
-          <label>Dominant color:</label><br>
-          <input type="color"><br>
+          <label>Dominant color:</label>
+          <input type="color">
 
-          <label>Weight (+/- 5kg):</label><br>
+          <label>Weight (+/- 5kg):</label>
           <input type="number">
 
-          <label>Winspan (+/- 20cm):</label><br>
+          <label>Winspan (+/- 20cm):</label>
           <input type="range" class="sliderClass">
 
-          <label>Risk of extinction:</label><br>
+          <label>Risk of extinction:</label>
           <div class="radio-group">
             <input type="radio" name="extinction" id="leastConcern">
             <label for="leastConcern">Least Concern</label>
@@ -219,17 +225,17 @@
             Couldn't find the bird you were looking for? Let us know!
         </h2>
         <form>
-            <label>Your email:</label><br>
-            <input type="email"><br>
+            <label>Your email:</label>
+            <input type="email">
 
-            <label>Your mobile phone:</label><br>
-            <input type="tel"><br>
+            <label>Your mobile phone:</label>
+            <input type="tel">
   
-            <label>Bird photo</label><br>
-            <input type="file"><br>
+            <label>Bird photo</label>
+            <input type="file">
   
-            <label>Url for species documentation:</label><br>
-            <input type="url"><br>
+            <label>Url for species documentation:</label>
+            <input type="url">
   
             
             <input type="reset" id="reset-button" value="Reset">

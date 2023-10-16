@@ -2,6 +2,10 @@ a {
     font-size: 30px;
 }
 
+.topIdNav {
+    margin-bottom: 5px;
+}
+
 .welcome-message {
     text-align: center;
     margin-bottom: 20px;
@@ -16,7 +20,7 @@ a {
     max-width: 60%;
 }
 
-hr.rounded {
+.rounded-horizontal {
     border-top: 8px solid #be6565;
     border-radius: 5px;
   }
@@ -49,6 +53,9 @@ dt {
     background-color: rgb(190, 101, 101, 0.5);
     padding: 10px;
     margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .bottom-element {

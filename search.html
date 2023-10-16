@@ -17,63 +17,65 @@
     <div class="explanation-div">
         <h1>Look for a bird!</h1>
     </div>
-    <div class="search-container">
-        <form>
-          <label>Name:</label><br>
-          <input type="text"><br>
+    <div class="search-container" id="search">
+      <form>
+        <label>Name:</label>
+        <input type="text">
 
-          <label>Can fly:</label><br>
-          <input type="checkbox" checked="checked"><br>
+        <div class="can-fly-div">
+          <label>Can fly:</label>
+          <input type="checkbox" checked="checked">
+        </div>
 
-          <label>Dominant color:</label><br>
-          <input type="color"><br>
+        <label>Dominant color:</label>
+        <input type="color">
 
-          <label>Weight (+/- 5kg):</label><br>
-          <input type="number">
+        <label>Weight (+/- 5kg):</label>
+        <input type="number">
 
-          <label>Winspan (+/- 20cm):</label><br>
-          <input type="range" class="sliderClass">
+        <label>Winspan (+/- 20cm):</label>
+        <input type="range" class="sliderClass">
 
-          <label>Risk of extinction:</label><br>
-          <div class="radio-group">
-            <input type="radio" name="extinction" id="leastConcern">
-            <label for="leastConcern">Least Concern</label>
-          
-            <input type="radio" name="extinction" id="leastVulnerable">
-            <label for="leastVulnerable">Least Vulnerable</label>
-          
-            <input type="radio" name="extinction" id="endangered">
-            <label for="endangered">Endangered</label>
-          
-            <input type="radio" name="extinction" id="criticallyEndangered">
-            <label for="criticallyEndangered">Critically endangered</label>
-          </div>
+        <label>Risk of extinction:</label>
+        <div class="radio-group">
+          <input type="radio" name="extinction" id="leastConcern">
+          <label for="leastConcern">Least Concern</label>
+        
+          <input type="radio" name="extinction" id="leastVulnerable">
+          <label for="leastVulnerable">Least Vulnerable</label>
+        
+          <input type="radio" name="extinction" id="endangered">
+          <label for="endangered">Endangered</label>
+        
+          <input type="radio" name="extinction" id="criticallyEndangered">
+          <label for="criticallyEndangered">Critically endangered</label>
+        </div>
 
-          <input type="reset" id="reset-button" value="Reset">
-          <input type="button" value="Search">
-        </form>
-      </div>
-      <div class="search-container">
-        <h2>
-            Couldn't find the bird you were looking for? Let us know!
-        </h2>
-        <form>
-            <label>Your email:</label><br>
-            <input type="email"><br>
+        <input type="reset" id="reset-button" value="Reset">
+        <input type="button" value="Search">
+      </form>
+    </div>
+  <div class="search-container">
+    <h2>
+        Couldn't find the bird you were looking for? Let us know!
+    </h2>
+    <form>
+        <label>Your email:</label>
+        <input type="email">
 
-            <label>Your mobile phone:</label><br>
-            <input type="tel"><br>
-  
-            <label>Bird photo</label><br>
-            <input type="file"><br>
-  
-            <label>Url for species documentation:</label><br>
-            <input type="url"><br>
-  
-            
-            <input type="reset" id="reset-button" value="Reset">
-            <input type="button" value="Send">
-          </form>
-      </div>
+        <label>Your mobile phone:</label>
+        <input type="tel">
+
+        <label>Bird photo</label>
+        <input type="file">
+
+        <label>Url for species documentation:</label>
+        <input type="url">
+
+        
+        <input type="reset" id="reset-button" value="Reset">
+        <input type="button" value="Send">
+      </form>
+  </div>
 </body>
 </html>
