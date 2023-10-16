@@ -11,6 +11,19 @@ a {
     margin-bottom: 20px;
 }
 
+.extinction-div {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+mark {
+    background-color: #be6565;
+}
+
+.contact {
+    font-size: 30px;
+}
+
 .quote {
     margin: 0px auto;
 }
@@ -145,7 +158,7 @@ form {
     width: 100%;
   }
 
-  input[type=text], input[type=email], input[type=number], input[type=tel], input[type=url] {
+  textarea, input[type=text], input[type=date], input[type=email], input[type=number], input[type=tel], input[type=url] {
     background-color: transparent;
   }
 

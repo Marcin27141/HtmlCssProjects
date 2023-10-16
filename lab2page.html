@@ -9,7 +9,7 @@
 
     <!--non-default meta elements-->
     <meta name="keywords" content="Birds, Encyclopedia">
-    <meta name="description" content="Online birds encyclopedia">
+    <meta name="description" content="Online birds encyclopedia, open for modifications.">
     <meta name="author" content="Marcin Tkocz">
     <meta name="application-name" content="Birds encyclopedia">
     <meta http-equiv = "refresh" content = "300">
@@ -45,7 +45,7 @@
     </div>
     <div class="about-div">
         <p>
-            <i>.NetLabBirdEncyclopedia</i> is a <b>labor of love</b> created on October 11<sup>th</sup> 2023 <u>to share our passion</u> for the magnificent avian world with enthusiasts and curious minds alike.
+            <em>.NetLabBirdEncyclopedia</em> is a <strong>labor of love</strong> created on October 11<sup>th</sup> 2023 <mark>to share our passion</mark> for the magnificent avian world with enthusiasts and curious minds alike.
         </p>
     </div>
     <div class="rounded-horizontal"></div>
@@ -143,6 +143,7 @@
         </div>
     </div>
     <table class="classification-table" id="classification-table">
+        <caption>Birds classification table</caption>
         <thead>
           <tr>
             <th>Class</th>
@@ -183,7 +184,7 @@
         <h1>Look for a bird!</h1>
     </div>
     <div class="search-container" id="search">
-        <form>
+        <form method="post" action="lab2page.html">
           <label>Name:</label>
           <input type="text">
 
@@ -201,20 +202,34 @@
           <label>Winspan (+/- 20cm):</label>
           <input type="range" class="sliderClass">
 
-          <label>Risk of extinction:</label>
-          <div class="radio-group">
-            <input type="radio" name="extinction" id="leastConcern">
-            <label for="leastConcern">Least Concern</label>
-          
-            <input type="radio" name="extinction" id="leastVulnerable">
-            <label for="leastVulnerable">Least Vulnerable</label>
-          
-            <input type="radio" name="extinction" id="endangered">
-            <label for="endangered">Endangered</label>
-          
-            <input type="radio" name="extinction" id="criticallyEndangered">
-            <label for="criticallyEndangered">Critically endangered</label>
+          <div class="extinction-div">
+            <label>Risk of extinction:</label>
+            <select>
+              <option value="least_concern">Least Concern</option>
+              <option value="least_vurnelable">Least Vurnelable</option>
+              <option value="endangered">Endangered</option>
+              <option value="critically_endangered">Critically Endangered</option>
+            </select>
           </div>
+          
+
+          <div>
+            <label>Diet:</label>
+            <div class="radio-group">
+              <input type="radio" name="diet" id="herbivorous">
+              <label for="herbivorous">Herbivorous</label>
+            
+              <input type="radio" name="diet" id="carnivorous">
+              <label for="carnivorous">Carnivorous</label>
+
+              <input type="radio" name="diet" id="scavenger">
+              <label for="scavenger">Scavenger</label>
+            
+              <input type="radio" name="diet" id="omnivorous">
+              <label for="omnivorous">Omnivorous</label>
+            </div>
+          </div>
+          
 
           <input type="reset" id="reset-button" value="Reset">
           <input type="button" value="Search">
@@ -224,7 +239,10 @@
         <h2>
             Couldn't find the bird you were looking for? Let us know!
         </h2>
-        <form>
+        <form method="post" action="lab2page.html">
+            <label>Your birthday:</label>
+            <input type="date">
+
             <label>Your email:</label>
             <input type="email">
 
@@ -236,7 +254,9 @@
   
             <label>Url for species documentation:</label>
             <input type="url">
-  
+
+            <label>Anything you want to tell us?</label>
+            <textarea rows="4" cols=30">Your message...</textarea>  
             
             <input type="reset" id="reset-button" value="Reset">
             <input type="button" value="Send">
@@ -244,6 +264,11 @@
       </div>
       <div class="search-div bottom-element">
         <a href="#top">MOVE TO THE TOP</a>
+    </div>
+    <div class="contact">
+        <p>
+            Call us: &phone; +48 123 456 789
+        </p>
     </div>
 </body>
 </html>
