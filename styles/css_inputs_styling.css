@@ -6,14 +6,17 @@ div {
     
 .welcome-message {
     text-align: center;
+    font-size: 3em;
     margin-bottom: 80px;
+    position: static;
 }
 
 .bird-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 100px;
-    margin: 0 auto;
+    margin: 30 auto;
+    margin-bottom: 50px;
 
     max-width: 90%;
 }
@@ -37,37 +40,21 @@ div {
     height: 100%;
 }
 
+#latin-name {
+    font-style: italic;
+}
+
 .birdbox-content {
     padding: 3px;
 }
 
-.birdbox h4 {
+.birdbox-content > h4 {
     font-weight: bold;
     font-size: 200%;
     margin: 10px 0px;
 }
 
-.birdbox p {
+.birdbox-content > p {
     font-size: 120%;
     margin: 10px 0px;
-}
-
-.birdbox > p {
-    margin: 0px;
-}
-
-.em-text > p {
-    font-size: 2em;
-}
-
-.px-text > p {
-    font-size: 30px;
-}
-
-.pt-text > p {
-    font-size: 25pt;
-}
-
-.percent-text > p {
-    font-size: 200%;
 }

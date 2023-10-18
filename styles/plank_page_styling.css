@@ -1,0 +1,34 @@
+.adverts-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.adverts, .between-adverts {
+    height: 100%;
+}
+
+.adverts {
+    max-width: 20%;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://media.licdn.com/dms/image/C4E03AQHKLK1iWLCu8g/profile-displayphoto-shrink_800_800/0/1517021947433?e=2147483647&v=beta&t=1ECtOJbDR-p2-RWjw6_MDfxkzpnrEa-D6LhIAXUxKew);
+}
+
+.adverts.left {
+    position: relative;
+    left: 5%;
+}
+
+.adverts.right {
+    position: relative;
+    right: 5%;
+}
+
+.between-adverts {
+    flex-grow: 1;
+    height: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
