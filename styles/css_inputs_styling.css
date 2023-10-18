@@ -1,0 +1,38 @@
+div {
+    text-align: center;
+    width: auto;
+    margin:auto;
+}
+    
+.welcome-message {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.birdbox {
+    border-style: solid;
+    border-color: brown;
+    max-width: 50%;
+    margin-bottom: 50px;
+    padding: 10px 0px;
+}
+
+.birdbox > p {
+    margin: 0px;
+}
+
+.em-text > p {
+    font-size: 2em;
+}
+
+.px-text > p {
+    font-size: 30px;
+}
+
+.pt-text > p {
+    font-size: 25pt;
+}
+
+.percent-text > p {
+    font-size: 200%;
+}
