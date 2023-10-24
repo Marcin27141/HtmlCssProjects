@@ -5,7 +5,7 @@ div {
 }
 
 .header {
-    width: 700px;
+    width: 800px;
 }
 
 .welcome-message, .clarification-message {
@@ -16,23 +16,35 @@ div {
 .welcome-message {  
     display: inline;
     font-size: 3em;
+    color: rgb(25, 5, 88);
+    font-weight: bolder;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    text-decoration: underline solid rgb(44, 8, 161);
+    
     border: 2px solid #000;
     background-color: rgb(187, 210, 230);
-    padding: 0px 10px 10px 0px;
+    padding: 0px 20px 15px 0px;
 }
 
 .clarification-message {
     font-size: 20px;
+    background-color: rgb(120, 175, 224);
+    color: rgb(45, 38, 66);
+    font-weight: lighter;
+    font-family:'Courier New', Courier, monospace;
+    text-decoration-line: line-through;
+
     margin-top: 0px;
     margin-bottom: 80px;
     border: 2px solid #000;
-    background-color: rgb(120, 175, 224);
+    
     position: relative;
     width: 300px;
     height: 30px;
     padding-top: 5px;
-    left: 22px;
-    top: -5px
+    left: 60px;
+    top: 5px
 }
 
 .bird-cards {
