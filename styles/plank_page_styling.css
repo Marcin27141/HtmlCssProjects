@@ -83,3 +83,30 @@ td.searchable:hover {
     background-color: lightblue;
     cursor: pointer;
   }
+
+a.bottom-link {
+    font-size: large;
+    font-weight: bold;
+    background-color: bisque;
+    padding: 10px;
+}
+a.bottom-link:link {
+    color: rgb(0, 255, 128);
+}
+
+a.bottom-link:visited {
+    color: rgb(5, 99, 5);
+}
+
+a.bottom-link:hover {
+    color: rgb(138, 105, 255);
+}
+
+a.bottom-link:active {
+    color: rgb(0, 255, 34);
+}
+
+p::first-letter  {
+    color: #079fb6;
+    font-size: xx-large;
+}

@@ -1,3 +1,23 @@
+body {
+    margin: 0;
+    background-image: url(https://img.freepik.com/free-photo/green-park-view_1417-1492.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    font-family:serif;
+}
+
+div {
+  text-align: center;
+  width: auto;
+  margin:auto;
+}
+
+.left-right-div {
+    display: flex;
+}
+
 .topIdNav {
     margin-bottom: 5px;
 }

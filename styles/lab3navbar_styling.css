@@ -26,13 +26,13 @@ nav{
     padding: 0;
     }
 
-    nav ul li:hover ul {
-    display: block;
-    position: fixed;
-    width: 100%;
-    text-align: center;
-    background-color: rgb(71, 167, 223);
-    }
+    nav:hover > ul{
+        display:block;
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        background-color: rgb(71, 167, 223);
+        }
 
     nav>ul>li:hover>ul {
     display: block;
@@ -43,19 +43,12 @@ nav{
     }
 
     
-    nav:hover > ul{
-    display:block;
-    position: fixed;
-    width: 100%;
-    text-align: center;
-    background-color: rgb(71, 167, 223);
-    }
-
     nav ul li{
         display: inline;
         margin: 0 10px;
         color: black;
     }
+    
     nav ul li:hover{
     background-color: rgb(55, 98, 189);
     }
