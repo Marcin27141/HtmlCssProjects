@@ -13,6 +13,31 @@
             background-attachment:scroll;
             font-family: serif;
         }
+        a.bottom-link {
+            font-size: large;
+            font-weight: bold;
+            background-color: bisque;
+            padding: 10px;
+        }
+        a.bottom-link:link {
+        color: rgb(0, 255, 128);
+        }
+
+        a.bottom-link:visited {
+        color: rgb(5, 99, 5);
+        }
+
+        a.bottom-link:hover {
+        color: rgb(138, 105, 255);
+        }
+
+        a.bottom-link:active {
+        color: rgb(0, 255, 34);
+        }
+        p::first-letter  {
+        color: #079fb6;
+        font-size: xx-large;
+        }
     </style>
     <link rel="stylesheet" href="/styles/plank_page_styling.css">
 </head>
@@ -30,7 +55,10 @@
             <h2>
                 Here goes the page content for sponsoring, showing ads and others
             </h2>
-            <p>The background-image scrolls with the page. Try to scroll down.</p>
+            <div>
+                <a class="bottom-link" href="#end">Take me to the bottom</a>
+            </div>
+<p>The background-image scrolls with the page. Try to scroll down.</p>
 <p>The background-image scrolls with the page. Try to scroll down.</p>
 <p>The background-image scrolls with the page. Try to scroll down.</p>
 <p>The background-image scrolls with the page. Try to scroll down.</p>
@@ -126,6 +154,9 @@
 <p>The background-image scrolls with the page. Try to scroll down.</p>
 <p>The background-image scrolls with the page. Try to scroll down.</p>
 <p>The background-image scrolls with the page. Try to scroll down.</p>
+<div id="end">
+    <h1>Bottom</h1>
+</div>
         </div>
         <div class="adverts right">
         </div>

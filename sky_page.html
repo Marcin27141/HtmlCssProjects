@@ -5,52 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .navbar {
-            overflow: hidden;
-            background-color: #f3f3f3;
-            border: 1px solid #e7e7e7;
-            opacity: 0.8;
-            width: auto;
-            margin:auto;
-            text-align: center;
-        }
-
-        .navbar .right {
-            float: right;
-        }
-
-        .navbar .left {
-            float: left;
-        }
-
-        .navbar a {
-            color: #666;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-        }
+        nav{
+        position:fixed;
+        z-index: 50;
+        left:0px;
+        top:0px;
+        width: 100%;
         
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
+        font-weight: bold;
+        font-size: 30px;
         
-        .navbar a.active {
-            background-color: #04AA6D;
-            color: white;
+        border: 3px solid rgb(87, 58, 139);
+        text-align: center;
+        
+        background-color:rgb(5, 132, 206);
+        color: rgb(116, 208, 236);
+        }
+
+        nav ul{
+        display: none;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        }
+
+        nav:hover ul{
+        display:block;
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        background-color: rgb(71, 167, 223);
+        }
+
+        nav ul li{
+            display: inline;
+            margin: 0 10px;
+        color: black;
+        }
+        nav ul li:hover{
+        background-color: rgb(55, 98, 189);
         }
     </style>
     <link rel="stylesheet" href="/styles/sky_page_styling.css">
 </head>
 <body style="margin:0;background-image:url(https://t4.ftcdn.net/jpg/03/16/36/59/360_F_316365913_WKVKZW7gzsqqhkx4PgGyu0rArj5GykHK.jpg);background-size:cover;background-repeat:no-repeat;
-background-attachment:fixed;background-position:center center;font-family:serif;">
-    <div class="navbar">
-        <a class="left" href="css_inputs.html">Home</a>
-        <a class="left" href="css_inputs.html">About</a>
-        <a class="right" href="css_inputs.html">Login</a>
-        <a class="right" href="css_inputs.html">Register</a>
-    </div>
+background-attachment:fixed;background-position:center center;font-family:serif;padding-top: 50px;">
+    <nav> Menu
+        <ul>
+            <li>
+                <a href="">Fixed</a>
+            </li>
+            <li>
+                <a href="">Element Box</a>
+            </li>
+            <li>
+                <a href="">Other</a>
+            </li>
+        </ul>
+    </nav>
     <div class="header">
         <h1 class="welcome-message">Most interesting birds out there</h1>
         <h6 class="clarification-message">(In my humble opinion)</h6>

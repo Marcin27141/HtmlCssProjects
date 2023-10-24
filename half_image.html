@@ -51,6 +51,15 @@
         background-color: #044caa;
         color: white;
         }
+
+        input:focus {
+        background-color: rgb(143, 176, 219);
+        }
+
+        ::selection {
+        color: rgb(1, 185, 99);
+        background: rgb(1, 60, 99);
+        }
     </style>
 </head>
 <body>
@@ -81,7 +90,7 @@
 <p>The background-image scrolls with the page. Try to scroll down.</p>
 <p>The background-image scrolls with the page. Try to scroll down.</p>
 <p>The background-image scrolls with the page. Try to scroll down.</p>
-<h2>Do you want to contact us?</h2>
+<h2 class="contact-info">Do you want to contact us?</h2>
 <table id="contact-table">
     <tr>
       <th>First name</th>
@@ -114,6 +123,9 @@
       <td>filomena@wp.pl</td>
     </tr>
   </table>
+  <form>
+    Another mail: <input type="text">
+  </form>
 <p>The background-image scrolls with the page. Try to scroll down.</p>
 <p>The background-image scrolls with the page. Try to scroll down.</p>
 <p>The background-image scrolls with the page. Try to scroll down.</p>
