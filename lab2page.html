@@ -6,6 +6,7 @@
     <title>About</title>
     <link rel="stylesheet" href="styles/general_styling.css">
     <link rel="stylesheet" href="styles/lab2page_styling.css">
+    <link rel="stylesheet" href="styles/lab3navbar_styling.css">
 
     <!--non-default meta elements-->
     <meta name="keywords" content="Birds, Encyclopedia">
@@ -16,31 +17,52 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="navbar" id="top">
-                <a class="left" href="lab2page.html">Home</a>
-                <a class="left" href="lab2page.html">About</a>
-                <a class="right" href="lab2page.html">Login</a>
-                <a class="right" href="lab2page.html">Register</a>
-            </div>
+        <nav> Menu
+            <ul>
+                <li>
+                    <a href="sky_page.html">Home</a>
+                </li>
+                <li>Search
+                    <ul>
+                        <li>
+                            <a href="lab2page.html">Intro</a>
+                        </li>
+                        <li>
+                            <a href="lab2page.html#search">Start searching</a>
+                        </li>
+                        <li>
+                            <a href="lab2page.html#report">Report</a>
+                        </li>  
+                    </ul>
+                </li>
+                <li>Contact
+                    <ul>
+                        <li>
+                            <a href="half_image.html">Top</a>
+                        </li>
+                        <li>
+                            <a href="half_image.html#contact-table">Consultats</a>
+                        </li>
+                        <li>
+                            <a href="half_image.html#custom-email">Custom</a>
+                        </li>  
+                    </ul>
+                </li>
+                <li>Sponsors
+                    <ul>
+                        <li>
+                            <a href="plank_page.html">Show all</a>
+                        </li>
+                        <li>
+                            <a href="plank_page.html#sponsor-table">Sponsor table</a>
+                        </li>
+                        <li>
+                            <a href="plank_page.html#end">Acknowledgements</a>
+                        </li>  
+                    </ul>
+                </li>
+            </ul>
         </nav>
-        <div class="search-div">
-            <div class="topIdNav">
-                <img alt="Classification icon" width="40" height="40"
-                src="https://static.thenounproject.com/png/4577689-200.png">
-                <a href="#classification-lists">CLASSIFICATION LISTS</a>    
-            </div>
-            <div class="topIdNav">
-                <img alt="Classification icon" width="40" height="40"
-                src="https://static.thenounproject.com/png/4577689-200.png">
-                <a href="#classification-table">CLASSIFICATION TABLE</a>    
-            </div>
-            <div class="topIdNav">
-                <img alt="Search icon" width="40" height="40"
-                src="https://cdn-icons-png.flaticon.com/512/149/149852.png">
-                <a href="#search">SEARCH BIRDS</a>    
-            </div>
-        </div>
     </header>
     <main>
         <h1 class="welcome-message">&#8226; About the <em>.NetLabBirdEncyclopedia</em>&reg; &#8226;</h1>
@@ -87,69 +109,6 @@
     <div class="classification-explanation-div">
         <h1>Birds classification</h1>
         <h3>Here is an example of a bird classification:</h2>
-    </div>
-    <div class="left-right-div example-div" id="classification-lists">
-        <div class="names-difinition-div">
-            <ul>
-                <li>Order
-                    <ul>
-                        <li>Family
-                            <ul>
-                                <li>Genus
-                                    <ul>
-                                        <li>
-                                            Species
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div class="examples-div">
-            <ul class="nested-list">
-                <li>
-                    Coraciimorphae
-                </li>
-                <li>Passeriformes
-                    <ul>
-                        <li>
-                            Parulidae
-                        </li>
-                        <li>Cardinalidae
-                            <ul>
-                                <li>Cardinalis
-                                    <ol>
-                                        <li>
-                                            Cardinalis cardinalis
-                                        </li>
-                                        <li>
-                                            Vermilion cardinal
-                                        </li>
-                                    </ol>
-                                </li>
-                                <li>Piranga
-                                    <ol>
-                                        <li>
-                                            Piranga ludoviciana
-                                        </li>
-                                        <li>
-                                            Piranga olivacea
-                                        </li>
-                                        <li>
-                                            Piranga rubriceps
-                                        </li>            
-                                    </ol>                                    
-                                </li>
-                            </ul>
-                        </li>
-                        
-                    </ul>
-                </li>
-            </ul>
-        </div>
     </div>
     <table class="classification-table" id="classification-table">
         <caption>Birds classification table</caption>
@@ -247,7 +206,7 @@
           <input type="button" value="Search">
         </form>
       </div>
-      <div class="search-container">
+      <div class="search-container" id="report">
         <h2>
             Couldn't find the bird you were looking for? Let us know!
         </h2>

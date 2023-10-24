@@ -1,7 +1,3 @@
-a {
-    font-size: 30px;
-}
-
 .topIdNav {
     margin-bottom: 5px;
 }
@@ -54,12 +50,6 @@ mark {
     max-width: 400px;
 }
 
-ul, ol, dl {
-    font-size: 20px;
-    text-align: left;
-    list-style-position: inside;
-}
-
 dt {
     font-weight: bold;
 }
@@ -77,11 +67,6 @@ dt {
     margin-bottom: 50px;
 }
 
-ul, ol, dl {
-    font-size: 20px;
-    text-align: left;
-    list-style-position: inside;
-}
 
 h1, h3 {
     margin: 10px;

@@ -16,6 +16,7 @@
             background-position: center, top, bottom;
             background-color: #6BB1D3;
             font-family: serif;
+            padding-top: 50px;
         }
 
         .progress-info {
@@ -61,12 +62,59 @@
         background: rgb(1, 60, 99);
         }
     </style>
+    <link rel="stylesheet" href="styles/lab3navbar_styling.css">
 </head>
 <body>
-<div class="progress-info">
-    Here is the beginning.
-</div>
+    <nav> Menu
+        <ul>
+            <li>
+                <a href="sky_page.html">Home</a>
+            </li>
+            <li>Search
+                <ul>
+                    <li>
+                        <a href="lab2page.html">Intro</a>
+                    </li>
+                    <li>
+                        <a href="lab2page.html#search">Start searching</a>
+                    </li>
+                    <li>
+                        <a href="lab2page.html#report">Report</a>
+                    </li>  
+                </ul>
+            </li>
+            <li>Contact
+                <ul>
+                    <li>
+                        <a href="half_image.html">Top</a>
+                    </li>
+                    <li>
+                        <a href="half_image.html#contact-table">Consultats</a>
+                    </li>
+                    <li>
+                        <a href="half_image.html#custom-email">Custom</a>
+                    </li>  
+                </ul>
+            </li>
+            <li>Sponsors
+                <ul>
+                    <li>
+                        <a href="plank_page.html">Show all</a>
+                    </li>
+                    <li>
+                        <a href="plank_page.html#sponsor-table">Sponsor table</a>
+                    </li>
+                    <li>
+                        <a href="plank_page.html#end">Acknowledgements</a>
+                    </li>  
+                </ul>
+            </li>
+        </ul>
+    </nav>
     <p>The background-image scrolls with the page. Try to scroll down.</p>
+    <div class="progress-info">
+        Here is the beginning.
+    </div>
 <p>The background-image scrolls with the page. Try to scroll down.</p>
 <p>The background-image scrolls with the page. Try to scroll down.</p>
 <p>The background-image scrolls with the page. Try to scroll down.</p>
@@ -124,7 +172,7 @@
     </tr>
   </table>
   <form>
-    Another mail: <input type="text">
+    Another mail: <input type="text" id="custom-email">
   </form>
 <p>The background-image scrolls with the page. Try to scroll down.</p>
 <p>The background-image scrolls with the page. Try to scroll down.</p>
