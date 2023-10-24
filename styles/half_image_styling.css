@@ -15,7 +15,6 @@ body {
 .progress-info {
     background-color: coral;
     float: right;
-    size: 30px;
     padding: 2px 4px;
     font-size: 20px;
     margin-bottom: 100px;

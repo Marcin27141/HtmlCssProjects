@@ -74,10 +74,6 @@ div {
     height: 100%;
 }
 
-#latin-name {
-    font-style: italic;
-}
-
 .birdbox-content {
     padding: 3px;
 }
@@ -89,6 +85,7 @@ h4.name {
 }
 
 .birdbox-content > p {
+    font-style: italic;
     font-size: 15pt;
     margin: 10px 0px;
 }
