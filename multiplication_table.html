@@ -12,18 +12,24 @@
             text-align: center;
             width: auto;
             margin:auto;
+        } 
+        th, td {
+            border: 3px solid rgb(28, 75, 1);
+            font-size: 20px;
         }
-        .multiplication-table {
+        table {
             margin-top: 100px;
             margin-left: auto;
             margin-right: auto;
+        }
+        td {
+            padding: 5px 5px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <div id="table-container">
-        <table>
-            </table>
     </div>
     <script>
         window.addEventListener("load",
@@ -43,21 +49,47 @@
             let tableContainer = document.getElementById("table-container");
             
             const table = document.createElement('table');
+            const multiplicants = getRandomDifferentNumbers(tableSize);
+            
+            const headerRow = document.createElement('tr');
+            const emptyCell = document.createElement('td');
+            emptyCell.textContent = " ";
+            emptyCell.classList.add("headerRow")
+            headerRow.appendChild(emptyCell);   
+            for (let i = 0; i < tableSize; i++) {
+                const cell = document.createElement('td');
+                cell.textContent = multiplicants[i];
+                cell.classList.add("headerRow")
+                headerRow.appendChild(cell);   
+            }
+            table.appendChild(headerRow);
 
             for (let i = 0; i < tableSize; i++) {
                 const row = document.createElement('tr');
 
+                const firstCol = document.createElement('td');
+                firstCol.textContent = multiplicants[i];
+                firstCol.classList.add("first-column");
+                row.appendChild(firstCol);
                 for (let j = 0; j < tableSize; j++) {
                     const cell = document.createElement('td');
-                    cell.textContent = `${i * j}`;
+                    cell.textContent = `${multiplicants[i] * multiplicants[j]}`;
                     row.appendChild(cell);
                 }
 
                 table.appendChild(row);
             }
 
-            table.classList.add("multiplication-table");
             tableContainer.appendChild(table);
+        }
+        function getRandomDifferentNumbers(tableSize) {
+            let result = [];
+            while(result.length < tableSize){
+                let number = Math.floor(Math.random() * 99) + 1; //range 1-99
+                if(result.indexOf(number) === -1)
+                    result.push(number);
+            }
+            return result;
         }
     </script>
 </body>
