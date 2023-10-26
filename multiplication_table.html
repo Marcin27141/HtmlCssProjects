@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+        div {
+            text-align: center;
+            width: auto;
+            margin:auto;
+        }
+        .multiplication-table {
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="table-container">
+        <table>
+            </table>
+    </div>
+    <script>
+        window.addEventListener("load",
+        function(){
+            let size = 0;
+            let userInput = prompt("Enter the size of the table <5;20>");
+            if (userInput == null || userInput < 5 || userInput > 20) {
+                size = 5 + Math.floor(Math.random() * 15);
+                alert("Input was not correct. The size will be " + size);
+            } else {
+                size = userInput;
+                alert("Size of the table will be " + size);
+            }
+            createTable(size);
+        },false);
+        function createTable(tableSize) {
+            let tableContainer = document.getElementById("table-container");
+            
+            const table = document.createElement('table');
+
+            for (let i = 0; i < tableSize; i++) {
+                const row = document.createElement('tr');
+
+                for (let j = 0; j < tableSize; j++) {
+                    const cell = document.createElement('td');
+                    cell.textContent = `${i * j}`;
+                    row.appendChild(cell);
+                }
+
+                table.appendChild(row);
+            }
+
+            table.classList.add("multiplication-table");
+            tableContainer.appendChild(table);
+        }
+    </script>
+</body>
+</html>
