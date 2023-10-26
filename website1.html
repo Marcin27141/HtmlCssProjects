@@ -30,8 +30,8 @@
     </div>
     <!--Bird photo with a link and buttons-->
     <div>
-      <a target="_blank" href="https://en.wikipedia.org/wiki/Northern_cardinal">
-        <img alt="Northern cardinal" width="450" height="300"
+      <a target="_blank"  href="https://en.wikipedia.org/wiki/Northern_cardinal">
+        <img alt="Northern cardinal" class="bird-image" width="450" height="300"
         src="https://indianaaudubon.org/wp-content/uploads/2016/04/Cardinal_Northern_male_Ash_2012.jpg">
       </a>
       <div class="href_div">
@@ -52,7 +52,9 @@
           ">
           Add to favourites
         </button>
-        <button class="show-another-button">
+        <button class="show-another-button" onclick="
+          showNextBird();
+          ">
           Show another bird
         </button>
       </div>
@@ -70,15 +72,65 @@
         birdIsLiked = false;
       }
     }
-    /*window.addEventListener("load",
-      function(){
-        console.log('loaded successfuly');
-      },false);*/
-      /*console.log(document.querySelector('button').innerHTML);
+    
+    
+    const blueJay = {
+      name: 'Blue Jay',
+      latinName: 'Cyanocitta cristata',
+      photo: 'https://janadamski.eu/wp-content/uploads/2021/02/modrosojka_06.jpg',
+    }
 
-      const showButtonElement = document.querySelector('.show-another-button');
-      showButtonElement.innerHTML = 'changed text';
-      */
+    const stellersJay = {
+      name: 'Steller\'s jay',
+      latinName: 'Cyanocitta stelleri',
+      photo: 'https://wl-jasnastrona.cf.tsp.li/resize/728x/jpg/65a/b92/d1197a55b5bfcb845bac8037f9.jpg',
+    }
+
+    const violetSylph = {
+      name: 'Violet-tailed sylph',
+      latinName: 'Aglaiocercus coelestis',
+      photo: 'https://cdn.download.ams.birds.cornell.edu/api/v1/asset/244658561/1800',
+    }
+
+    const shoebill = {
+      name: 'Shoebill',
+      latinName: 'Balaeniceps rex',
+      photo: 'https://cdn.download.ams.birds.cornell.edu/api/v1/asset/373761801/1800',
+    }
+
+    const northernCardinal = {
+      name: 'Northern Cardinal',
+      latinName: 'Cardinal Cardinalis',
+      photo: 'https://indianaaudubon.org/wp-content/uploads/2016/04/Cardinal_Northern_male_Ash_2012.jpg',
+    }
+
+    const asianBeeEater = {
+      name: 'Asian bee-eater',
+      latinName: 'Merops orientalis',
+      photo: 'https://cdn.download.ams.birds.cornell.edu/api/v1/asset/496221971/',
+    }
+
+    let currentIndex = 0;
+    const birds = [northernCardinal, blueJay, stellersJay, violetSylph, shoebill, asianBeeEater];
+
+    function showNextBird() {
+      currentIndex = (currentIndex + 1) % birds.length;
+      const nextBird = birds[currentIndex];
+      const birdDescElement = document.querySelector(".bird-description");
+      birdDescElement.innerHTML = `
+      <h2>Bird of the day:</h2>
+      <h3>${nextBird.name}</h3>
+      <p>
+        Some trivia about ${nextBird.name}
+      </p>
+      <p>
+        Next part of trivia about ${nextBird.name}
+      </p>
+      `;
+
+      const birdImgElement = document.querySelector(".bird-image");
+      birdImgElement.src = nextBird.photo;
+    }
   </script>
 </body>
 </html>
