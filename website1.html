@@ -47,7 +47,9 @@
       </div>
       <!--Buttons below the photo-->
       <div class="bird-of-the-day-buttons">
-        <button class="favourites-button">
+        <button class="favourites-button" onclick="
+          onFavouritesClicked();
+          ">
           Add to favourites
         </button>
         <button class="show-another-button">
@@ -56,5 +58,27 @@
       </div>
     </div>
   </div>
+  <script>
+    let birdIsLiked = false;
+    function onFavouritesClicked() {
+      const likedButton = document.querySelector('.favourites-button');
+      if (!birdIsLiked) {
+            likedButton.innerText = 'Added';
+            birdIsLiked = true;
+      } else {
+        likedButton.innerText = 'Add to favourites';
+        birdIsLiked = false;
+      }
+    }
+    /*window.addEventListener("load",
+      function(){
+        console.log('loaded successfuly');
+      },false);*/
+      /*console.log(document.querySelector('button').innerHTML);
+
+      const showButtonElement = document.querySelector('.show-another-button');
+      showButtonElement.innerHTML = 'changed text';
+      */
+  </script>
 </body>
 </html>

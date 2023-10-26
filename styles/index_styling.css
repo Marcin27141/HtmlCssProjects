@@ -16,6 +16,10 @@
   }
   
   .bird-of-the-day-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
     margin-top: 20px;
   }
 
