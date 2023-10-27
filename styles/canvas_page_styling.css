@@ -7,7 +7,7 @@ body {
     margin:auto;
     margin-top: 100px;
 } 
-#mainCanvas {
+.mainCanvas {
     background-color: white;
     border: solid 3px rgb(69, 69, 69);
 }
