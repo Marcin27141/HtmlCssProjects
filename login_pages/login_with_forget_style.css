@@ -70,20 +70,27 @@ body {
     border-radius: 10px;
 }
 
+.container .slide-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width:200%;
+}
+
 .container .form-container {
     position: absolute;
     top: 0;
     height: 100%;
-    width: 100%;
+    width: 50%;
     transition: all 0.7s ease-in-out;
 }
 
 .container .sign-in {
-    z-index: 2;
+    left: 0;
 }
 
 .container .password-forgot {
-    transform: translateX(100%);
+    right: 0;
 }
 
 .container.active .sign-in {
@@ -91,5 +98,5 @@ body {
 }
 
 .container.active .password-forgot {
-    transform: translateX(0%);
+    transform: translateX(-100%);
 }
