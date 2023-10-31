@@ -131,12 +131,13 @@ h4.name {
     letter-spacing: 0.4px;
 }
 
-.bird-details-container .bird-details {
+.bird-details-container .bird-trivia {
     box-sizing: border-box;
     position: absolute;
     right: 2%;
     top: 5%;
-    height: 90%;
+    height: 75%;
+    overflow: auto;
     width: 50%;
     font-size: 24px;
     padding: 12px;
