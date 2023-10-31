@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #b2fefa, #0ed2f7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    background-color: rgb(126, 166, 241);
+    border-radius: 30px;
+    max-width: 100%;
+    overflow: hidden;
+    width: 500px;
+    min-height: 500px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35)
+}
+
+.container p {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.3px;
+    margin: 5px 0 20px 0;
+}
+
+.container a {
+    text-decoration: none;
+    color:darkblue;
+    font-size: 18px
+}
+
+.container button {
+    background-color: navy;
+    color: white;
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.container form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 40px;
+}
+
+.container input {
+    background-color: whitesmoke;
+    border: none;
+    width: 100%;
+    font-size: 18px;
+    outline: none;
+    margin: 5px 0px;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.container .slide-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width:200%;
+}
+
+.container .form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    transition: all 0.7s ease-in-out;
+}
+
+.container .sign-in {
+    left: 0;
+}
+
+.container .password-forgot {
+    right: 0;
+}
+
+.container.active .sign-in {
+    transform: translateX(-100%);
+}
+
+.container.active .password-forgot {
+    transform: translateX(-100%);
+}

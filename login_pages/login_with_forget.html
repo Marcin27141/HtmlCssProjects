@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login_with_forget_style.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="slide-container">
+            <div class="form-container sign-in">
+                <form>
+                    <h1>Good to see you back!</h1>
+                    <p>Sign in to continue your work.</p>
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <button>Sign in</button>
+                    <a href="#" id="forgot-password-href">Forgot your password?</a>
+                </form>
+            </div>
+            <div class="form-container password-forgot">
+                <form>
+                    <h1>Enter Your email below</h1>
+                    <p>We will send You a reset link</p>
+                    <input type="email" placeholder="Email">
+                    <div class="horizontal-buttons">
+                        <button id="back-button">Back</button>
+                        <button id="send-button">Send</button>
+                        
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        const containerElement = document.getElementById('container');
+        const forgotPasswordElement = document.getElementById('forgot-password-href');
+        const backButton = document.getElementById('back-button');
+
+        forgotPasswordElement.addEventListener('click', () => {
+            containerElement.classList.add('active');
+        })
+
+        backButton.addEventListener('click', () => {
+            containerElement.classList.remove('active');
+        })
+    </script>
+</body>
+</html>
