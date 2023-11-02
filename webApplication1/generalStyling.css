@@ -1,0 +1,78 @@
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(to right, #b2fefa, #0ed2f7);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+header {
+    width: 100%;
+    z-index: 100;
+    margin: 0;
+}
+
+nav {
+    background-color: aliceblue;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.navbar .container .navbar-brand {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.navbar .navbar-elements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display:inline-block;
+    padding: 0 5px;
+}
+
+.navbar li a {
+    text-decoration: none;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10%;
+}
