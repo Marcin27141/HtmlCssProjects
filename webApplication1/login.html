@@ -5,24 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="generalStyling.css" />
     <link rel="stylesheet" href="loginStyling.css" />
+    
 </head>
 <body>
     <header class="top-header">
         <nav class="navbar">
             <div class="container">
-                <a class="navbar-brand" href="#">WebApplication1</a>
+                <a class="navbar-brand" href="index.html">WebApplication1</a>
                 <div class="navbar-elements">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Privacy</a>
+                            <a class="nav-link" href="privacy.html">Privacy</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Login</a>
+                            <a class="nav-link" href="login.html">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -37,14 +38,14 @@
                         <form id ="account" method="post">
                             <h1>Good to see you!</h1>
                             <p>Sign in to continue your work.</p>
-                            <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
-                            <input asp-for="Input.Email" placeholder="Email" autocomplete="username" aria-required="true">
-                            <span asp-validation-for="Input.Email" class="text-danger"></span>
-                            <input asp-for="Input.Password" placeholder="Password" autocomplete="current-password" aria-required="true">
-                            <span asp-validation-for="Input.Password" class="text-danger"></span>
+                            <div class="text-danger" role="alert"></div>
+                            <input type="email" placeholder="Email" autocomplete="username" aria-required="true">
+                            <span class="text-danger"></span>
+                            <input type="password" placeholder="Password" autocomplete="current-password" aria-required="true">
+                            <span class="text-danger"></span>
                             <div class="remember-forgot">
-                                <label asp-for="Input.RememberMe">
-                                    <input asp-for="Input.RememberMe" />
+                                <label>
+                                    <input type="checkbox" />
                                     Remember me?
                                 </label>
                                 <span id="forgot-password-text">Forgot Your password?</span>
@@ -74,5 +75,6 @@
             &copy; 2023 - WebApplication1 - Privacy
         </div>
     </footer>
+    <script src="login.js"></script>
 </body>
 </html>
