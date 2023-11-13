@@ -170,3 +170,90 @@ h4.name {
 .bird-details-container.hidden {
     display: none;
 }
+
+.social-icons {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+}
+
+.social-icons .icon {
+    background-color: white;
+    padding: 15px;
+    margin-top: 50px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.social-icons i {
+    font-size: 30px;
+}
+
+.social-icons .tip {
+    position: absolute;
+    top: 0;
+    font-size: 18px;
+    opacity: 0;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.social-icons .tip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+}
+
+.social-icons .icon:hover .tip {
+    top: -45px;
+    opacity: 1;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.social-icons .facebook {
+    color: #3b5998;
+}
+
+.social-icons .instagram {
+    color: #c32aa3;
+}
+
+.social-icons .youtube {
+    color: #ff0000;
+}
+
+.social-icons .facebook:hover,
+.social-icons .facebook:hover .tip,
+.social-icons .facebook:hover .tip::before {
+    background: #3b5998;
+    color: #fff;
+}
+
+.social-icons .instagram:hover,
+.social-icons .instagram:hover .tip,
+.social-icons .instagram:hover .tip::before {
+    background: #c32aa3;
+    color: #fff;
+}
+
+.social-icons .youtube:hover,
+.social-icons .youtube:hover .tip,
+.social-icons .youtube:hover .tip::before {
+    background: #ff0000;
+    color: #fff;
+}
